@@ -18,9 +18,9 @@ Learn about the Canvas API by building the classic Breakout game. Implement coll
 
 ## Screenshots
 
-![Screenshot]()
+![Screenshot](https://user-images.githubusercontent.com/57517804/113013293-2cfc4780-91ae-11eb-8d45-79cf026c5dc2.png)
 
-[Demo]()
+[Demo](https://epic-noether-206236.netlify.app)
 
 ## Built With
 
