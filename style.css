@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* 
+#332c50 
+#46878f 
+#94e344 
+#e2f3e4 
+ */
+
+html {
+  box-sizing: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #332c50;
+  font-family: "Press Start 2P", cursive;
+  background: #46878f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+canvas {
+  background: #e2f3e4;
+  display: block;
+  border-radius: 5px;
+}
+
+.btn {
+  cursor: pointer;
+  border: 1px solid #332c50;
+  color: #332c50;
+  background: #94e344;
+  font-family: inherit;
+  box-shadow: inset 0px -2px #e2f3e4, 0px 2px #332c50, 2px 0px #332c50,
+    2px 0px #332c50;
+  border-radius: 2px;
+  position: relative;
+  transform: translateY(-2px);
+  padding: 1em 2em;
+  transition: all 0.1s linear;
+  text-transform: uppercase;
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: inset 0px -2px #e2f3e4, 0px 0px #332c50;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background: #7ad520;
+}
+
+.btn--rules {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.rules {
+  line-height: 1.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  min-width: 400px;
+  height: 100vh;
+  padding: 4em 2em;
+  color: #e2f3e4;
+  transform: translateX(-100%);
+  transition: all 0.4s linear;
+  background: #36676d;
+}
+
+.rules.show {
+  transform: translateX(0);
+}
+
+.rules h2 {
+  font-size: 1.6rem;
+}
+
+.rules p {
+  font-size: 0.7rem;
+  margin-bottom: 2.5em;
+}
+
+.score {
+  position: absolute;
+  color: #332c50;
+  top: 25%;
+  right: 27%;
+}
+
+.endGame {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(252, 29%, 24%, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #e2f3e4;
+  text-align: center;
+}
+
+.endGame h2 {
+  font-size: 4rem;
+}
+
+.endGame btn {
+  width: 50%;
+}
+
+.endGame.show {
+  visibility: visible;
+  opacity: 1;
+}
